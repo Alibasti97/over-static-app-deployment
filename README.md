@@ -77,7 +77,7 @@ sudo apt-get install jenkins
 
 ```bash
    docker rm -f "container_name"
-   docker run -f -p 32768:80 --name <container_name> <image_name>
+   docker run -d -p 32768:80 --name <container_name> <image_name>
    ```
 13. To automatically trigger the jenkins job whenever there is a change in the repository enable the webhook option from the jenkin's job configuration.
 
